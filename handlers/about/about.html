@@ -1,0 +1,12 @@
+<head>
+	<script src="{{rootPath}}lib/requirejs/require.js"></script>
+	<script>
+		// Tell AMD loaded to set '.' to the client/ folder
+		require.config({ baseUrl: '{{rootPath}}client' });
+		require(['helpGeneral/helpGeneral'], function(helpGeneral) {
+			helpGeneral();
+		});
+	</script>
+	<link type="text/css" rel="stylesheet" href="{{rootPath}}client/tools.css"/>
+</head>
+

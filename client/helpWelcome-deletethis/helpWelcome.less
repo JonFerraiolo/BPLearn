@@ -1,0 +1,65 @@
+/* Most css/less is in modal/fullScreenModal.less */
+.helpWelcome {
+	max-width: 500px;
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px #888;
+	background: white;
+	padding: 1.5em;
+	position: relative;
+}
+@media screen and (max-width: 500px) {
+	.helpWelcome {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 320px) {
+	.helpWelcome {
+		max-width: 320px;
+	}
+}
+.helpWelcomeTitle {
+	margin: 0 0 .8em;
+	text-align: center;
+	font-size: 1.3em;
+	clear: both;
+}
+.helpWelcomeCloseButton {
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/close.svg');
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	right: 5px;
+	top: 5px;
+	position: absolute;
+	cursor: pointer;
+}
+.helpWelcomeBody {
+	text-align: left;
+}
+.helpWelcomeBody iframe {
+	width: 640px;
+	height: 390px;
+}
+.helpWelcomeButtonDiv {
+	margin-top: 1em;
+	color: white;
+}
+.helpWelcomeButtonDiv a:link, .helpWelcomeButtonDiv a:visited {
+	color: white;
+	text-decoration: none;
+}
+.helpWelcomeHelpIconBig {
+	display: inline-block;
+	width: @pageHeaderIconWidth;
+	height: @pageHeaderIconHeight;
+	background-repeat: no-repeat;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/help.svg');
+}
+.helpWelcomeHelpIconSmall {
+	display: inline-block;
+	width: @contextHelpIconSize;
+	height: @contextHelpIconSize;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/help.svg');
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,15 @@
+<link type="text/css" rel="stylesheet" href="{{rootPath}}client/tools.css"/>
+<script src="{{socketIOFullPath}}"></script>
+<script src="{{rootPath}}lib/requirejs/require.js"></script>
+<script>
+	var BrandingPays = { user: {{userObj}}, system: {{systemObj}} };
+	// Tell AMD loaded to set '.' to the client/ folder
+	require.config({ baseUrl: '{{rootPath}}client' });
+	// Pull in tools_built, which has all of the client-side JavaScript in one big *.js file.
+	require(['tools_built'], function(tools_built) {
+		// Use nested require's to avoid a network request for main.js, which is in tools_built
+		require(['main'], function(main) {
+			main();
+		});
+	});
+</script>

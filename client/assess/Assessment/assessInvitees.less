@@ -1,0 +1,143 @@
+@assessInviteesInputFontSize: 15px;
+@assessInviteesDateFontSize: 14px;
+@assessInviteesDateFontFamily: 'proxima-nova-1', 'proxima-nova-2', Arial, sans-serif;
+@assessInviteesAddButtonBGColor: rgb(173, 216, 230); /*FIXME: Refactor, remove redundancy*/
+
+.assessInvitees {
+	padding: 0 1.5em;
+	height: auto;
+}
+.assessInviteesErrors {
+	margin: .2em 0 .5em;
+	color: red;
+	font-weight: bold;
+}
+.assessInviteesTABLE {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+	font-size: @assessInviteesInputFontSize;
+}
+.assessInviteesTABLE th {
+	text-align: left;
+	width: 1px;
+	height: 28px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.assessInviteesTABLE th {
+	padding: 0;
+}
+.assessInviteesTABLE td {
+	vertical-align: middle;
+}
+.assessInviteesExistingTABLE td {
+	padding: 0 4px;
+}
+.assessInviteesNewTABLE th,
+.assessInviteesNewTABLE td {
+	padding: 2px 4px;
+}
+.assessInviteesTABLE th.assessInviteesNumberTD,
+.assessInviteesTABLE td.assessInviteesNumberTD {
+	width: 2em;
+	text-align: center;
+}
+.assessInviteesTABLE th.assessInviteesFirstNameTD,
+.assessInviteesTABLE td.assessInviteesFirstNameTD,
+.assessInviteesTABLE th.assessInviteesLastNameTD,
+.assessInviteesTABLE td.assessInviteesLastNameTD {
+	width: 10em;
+}
+.assessInviteesTABLE th.assessInviteesEmailTD,
+.assessInviteesTABLE td.assessInviteesEmailTD {
+	width: 14em;
+}
+.assessInviteesTABLE input {
+	font-size: @assessInviteesInputFontSize;
+	width: 100%;
+}
+.assessInviteesCustomEmailBUTTON,  {
+	vertical-align: middle;
+	font-size: 13px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.assessInviteesButtonDIV {
+	margin-top: 2em;
+	text-align: center;
+}
+.assessInviteesButtonDIV button {
+	margin: 0 1em;
+	padding: 2px 4px;
+	font-size: @assessInviteesInputFontSize;
+	background: lightgray;
+	border: 1px solid darkgray;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 1px 1px 1px #444;
+	cursor: pointer;
+}
+.assessInviteesButtonDIV button.assessInviteesUpdateBUTTON {
+	background-color: #dfd;
+	cursor: pointer;
+}
+.assessInviteesButtonDIV button.assessInviteesDefaultEmailTextBUTTON {
+	float: right;
+	margin: 0;
+	cursor: pointer;
+}
+.assessInviteesExistingEntryTR .assessInviteesFirstNameTD,
+.assessInviteesExistingEntryTR .assessInviteesLastNameTD,
+.assessInviteesExistingEntryTR .assessInviteesEmailTD {
+	padding-left: .5em;
+}
+.assessInvitees input.assessInviteesInvalidField {
+	border: 1px solid red;
+	background-color: pink;
+}
+.assessInviteesExistingDIV {
+	margin-top: 1em;
+	padding: .4em;
+	border: 1px solid #dda;
+	background-color: #ffd;
+}
+.assessInviteesNewDIV {
+	margin-top: 1em;
+	padding: .4em;
+	border: 1px solid #bdb;
+	background-color: #dfd;
+}
+.assessInviteeRemoveAnchor {
+	cursor: pointer;
+}
+.assessInviteesDueDateError {
+	margin: 1em 0;
+	color: red;
+	font-weight: bold;
+	display: none;
+}
+.assessInviteesDueDateDIV {
+	margin-top: 1em;
+	background-color: #fef;
+	padding: .4em;
+	border: 1px solid #fdf;
+}
+.assessInviteesDueDateDIV * {
+	vertical-align: middle;
+}
+.assessInviteesDueDateLABEL {
+	margin-right: .5em;
+}
+.assessInviteesDueDate {
+	font-size: @assessInviteesDateFontSize;
+	font-family: assessInviteesDateFontFamily;
+}
+.assessInviteesDueDateNote {
+	font-size: 80%;
+	margin-left: 1em;
+	font-style: italic;
+}
+.assessInviteesCustomInviteSPAN {
+	margin-left: 2em;
+}

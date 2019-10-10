@@ -1,0 +1,101 @@
+@workbookNameBorder: 1px solid gray;
+@workbookTitleBarHeight: 30px;
+@workbookTitleBackgroundColor: #f0f0f0;
+
+.workbookView {
+	height: 100%;	
+}
+.workbookIcon {
+	float: left;
+	display: inline-block;
+	width: 26px;
+	height: 28px;
+	line-height: 28px;
+	font-size: @iconDownArrowSize;
+	margin-left: 1.25em;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/binder.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+}
+.workbookViewBadgeArrow.popupMenuShowing {
+	background-color: @popupMenuBackgroundColor;
+}
+.workbookViewArrow {
+	margin-left: 3px;
+	font-size: 11px;
+	vertical-align: middle;
+	display: block;
+	width: auto;
+}
+.workbookViewArrow:after {
+	content: "\25BC";
+}
+/*
+.workbookIcon:after {
+	content: "\25BC";
+}
+*/
+.workbookIcon.popupMenuShowing {
+	background-color: @popupMenuBackgroundColor;
+}
+.workbookViewTABLE {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;	/* equivalent of cellspacing=0 */
+	border-collapse: collapse;
+}
+.workbookNameDiv {
+	background-color: @workbookTitleBackgroundColor;
+	color: black;
+	height: @workbookTitleBarHeight;
+	line-height: @workbookTitleBarHeight;
+	text-align: left;
+	font-size: 1em;
+	border-bottom: @workbookNameBorder;
+}
+input.workbookName {
+	margin-left: .8em;
+	margin-top: 3px;
+	font-size: 1em;
+	width: 50%;
+	vertical-align: middle;
+	display: inline-block;
+	background-color: @workbookTitleBackgroundColor;
+	border: @workbookNameBorder;
+}
+.workbookViewTabsTR {
+	height: 40px;
+	display: none;
+}
+.workbookViewTD.workbookViewTD {
+	vertical-align: top;
+	padding: 0 10px;
+}
+.workbookViewBody {
+}
+.workbookViewTabsTD.workbookViewTabsTD {
+	padding-top: 12px;
+}
+.workbookViewTopFieldsTR {
+	height: 29px;
+	display: none;
+}
+.workbookViewBodyTD {
+	vertical-align: top;
+	height: 100%;
+	padding: 0;
+}
+.ContextHelpIcon {
+	display: inline-block;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/helpWhite.svg');
+	background-repeat: no-repeat;
+}
+

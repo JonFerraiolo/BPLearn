@@ -1,0 +1,155 @@
+@pageHeaderHeight: 70px;
+@pageHeaderIconWidth: 32px;
+@pageHeaderIconHeight: 26px;
+@pageHeaderDownArrowIconHeight: 20px;
+@pageHeaderIconMargin: 0 0 0 8px;
+@pageFontFamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+@pageFontWeight: 300;
+@logoWidth: 240px;
+@logoHeight: @pageHeaderHeight - 6px;
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: @pageFontFamily;
+	font-weight: @pageFontWeight;
+}
+.pageTableTABLE, .pageHeaderTABLE {
+	border-spacing: 0px;	/* equivalent of cellspacing=0 */
+	border-collapse: collapse;
+}
+.pageTableHeaderTD, pageTableBodyTD, .pageHeaderLeftTD, .pageHeaderRightTD {
+	padding: 0px;	/* equivalent of cellpadding=0 */
+}
+.pageTableTABLE {
+	width: 100%;
+	height: 100%;
+}
+.pageTableHeaderTR {
+	height: @pageHeaderHeight;
+	font-size: 16px;
+}
+.pageTableHeaderTD.pageTableHeaderTD {
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 1em;
+}
+.pageHeaderTABLE {
+	width: 100%;
+	height: @pageHeaderHeight - 1px;
+	line-height: 32px;
+}
+.pageHeaderMainTabsTD.pageHeaderMainTabsTD {
+	padding-top: 5px;
+}
+.pageHeaderLeftTD.pageHeaderLeftTD {
+	padding-left: 10px;
+	width: @logoWidth + 10px;
+	height: @logoHeight;
+	font-size: 20px;
+}
+.pageHeaderRightTD.pageHeaderRightTD {
+	width: 1px;
+	white-space: nowrap;
+}
+.pageHeaderLeftTD .pageHeaderBrandingPaysIcon {
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/KarenKangBrandingPays.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: @logoWidth;
+	height: @logoHeight;
+	font-size: 20px;
+}
+.pageHeaderRightTD.pageHeaderRightTD {
+	vertical-align: top;
+	text-align: right;
+	padding-right: 6px;
+	padding-top: 20px;
+	height: @pageHeaderIconHeight;
+	line-height: @pageHeaderIconHeight;
+}
+.pageHeaderUser {
+	display: inline-block;
+	line-height: 16px;
+	vertical-align: top;
+	margin-top: 2px;
+	cursor: pointer;
+}
+.pageHeaderUser:link, .pageHeaderUser:visited {
+	text-decoration: none;
+	color: black;
+}
+.pageHeaderUserIconMenu.popupMenuShowing {
+	background-color: @popupMenuBackgroundColor;
+}
+.pageHeaderUserIcon {
+	vertical-align: middle;
+	margin-left: .75em;
+	width: 20px;
+	height: 28px;
+	display: inline-block;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/user.svg');
+	background-repeat: no-repeat;
+}
+.pageHeaderUserMenu {
+	font-size: @iconDownArrowSize;
+	text-align: left;
+	margin-left: -.08em;
+	display: inline-block;
+	width: 1em;
+	height: @pageHeaderIconHeight;
+	line-height: @pageHeaderDownArrowIconHeight;
+	vertical-align: middle;
+}
+.pageHeaderUserMenu:after {
+	content: "\25BC";
+}
+.pageHeaderIconSPAN {
+	display: inline-block;
+	margin: @pageHeaderIconMargin;
+}
+a.pageHeaderIcon {
+	display: inline-block;
+	width: @pageHeaderIconWidth;
+	height: @pageHeaderIconHeight;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.pageTableRulerTD {
+	padding: 0 10px;
+	height: 4px;
+}
+.pageTableRulerDIV {
+	height: 2px;
+	background-color: #333;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.pageTableBodyTD.pageTableBodyTD {
+	vertical-align: top;
+	padding: 0 8px;
+}
+.pageBreak {
+	page-break-before: always;
+}
+.videoContentThumb {
+	display: inline-block;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	background-color: white;
+	top: 0px;
+	left: 0px;
+	border: 1px solid black;
+}
+.videoPlayButton {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-position: center center;
+	background-size: 60px 60px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/play.svg');
+	cursor: pointer;
+}

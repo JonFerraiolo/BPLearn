@@ -1,0 +1,117 @@
+<div class='myAccount'>
+	<h3 class='myAccountTitle'>My Account</h3>
+	<div class='myAccountFieldsContainerDIV'>
+		<div class='myAccountTabBar'>
+			<table class='myAccountTabBarTABLE'>
+				<tr>
+					<td class='myAccountTabBarTD' data-bp-myAccountTab='Personal'>
+						<span class='myAccountTabBarText'>Personal</span>
+					</td>
+					<td class='myAccountTabBarTD' data-bp-myAccountTab='Payment'>
+						<span class='myAccountTabBarText'>Payment</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class='myAccountErrors'></div>
+		<div class='myAccountFieldsDIV' data-bp-myAccountDIV='Personal'>
+			<table class='myAccountFieldsTABLE'>
+				<tr>
+					<td colspan='4' class='myAccountErrors myAccountPersonalErrors'></td>
+				</tr>
+				<tr>
+					<td class='myAccountLabelColumn'>First name:</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='firstName'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='firstName' placeholder='First name'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'>
+						<button class='myAccountChangeBUTTON' data-bp-myAccountChangeBUTTON='firstName'>Change</button>
+					</td>
+				</tr>
+				<tr>
+					<td class='myAccountLabelColumn'>Last name:</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='lastName'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='lastName' placeholder='Last name'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'>
+						<button class='myAccountChangeBUTTON' data-bp-myAccountChangeBUTTON='lastName'>Change</button>
+					</td>
+				</tr>
+				<tr>
+					<td class='myAccountLabelColumn'>Email:</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='email'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='email' placeholder='Email'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'>
+						<button class='myAccountChangeBUTTON' data-bp-myAccountChangeBUTTON='email'>Change</button>
+					</td>
+				</tr>
+				<tr>
+					<td class='myAccountLabelColumn'>Password:</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='password'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='password' placeholder='Password'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'>
+						<button class='myAccountChangeBUTTON' data-bp-myAccountChangeBUTTON='password'>Change</button>
+					</td>
+				</tr>
+				<tr class='myAccountRepeatPasswordTR'>
+					<td class='myAccountLabelColumn'>Repeat password:</td>
+					<td class='myAccountValueColumn'>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='password2' placeholder='Repeat password'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'></td>
+				</tr>
+			</table>
+		</div>
+		<div class='myAccountFieldsDIV' data-bp-myAccountDIV='Payment'>
+			<table class='myAccountFieldsTABLE'>
+				<tr>
+					<td colspan='4' class='myAccountErrors myAccountPaymentErrors'></td>
+				</tr>
+				<tr>
+					<td class='myAccountLabelColumn'>Credit card number:</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='ccNumber'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='ccNumber' placeholder='Credit card number'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'>
+						<button class='myAccountChangeBUTTON' data-bp-myAccountChangeBUTTON='ccNumber'>Change</button>
+					</td>
+				</tr>
+				<tr class='myAccountExpiresTR'>
+					<td class='myAccountLabelColumn'>Credit card expiration (mm/yy):</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='ccExpires'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='ccExpires' placeholder='Credit card expiration (mm/yy)'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'></td>
+				</tr>
+				<tr class='myAccountCVVTR'>
+					<td class='myAccountLabelColumn'>Card verification code (CVV):</td>
+					<td class='myAccountValueColumn'>
+						<span class='myAccountSPAN' data-bp-myAccountSPAN='ccCVV'></span>
+						<input class='myAccountINPUT' data-bp-myAccountINPUT='ccCVV' placeholder='Card verification code (CVV)'></input>
+					</td>
+					<td class='myAccountRequiredColumn'></td>
+					<td class='myAccountChangeColumn'></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class='myAccountButtonDIV'>
+		<button class='myAccountUpdateBUTTON'>Save changes</button>
+		<button class='myAccountCancelBUTTON'>Close</button>
+	</div>
+</div>

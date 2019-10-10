@@ -1,0 +1,12 @@
+<link type="text/css" rel="stylesheet" href="{{rootPath}}client/tools.css"/>
+<script src="{{rootPath}}socket.io/socket.io.js"></script>
+<script src="{{rootPath}}lib/requirejs/require.js"></script>
+<script>
+	var BrandingPays = { invitee: {{inviteeObj}}, inviter: {{inviterObj}}, Assessment: {{AssessmentObj}} };
+	// Tell AMD loaded to set '.' to the client/ folder
+	require.config({ baseUrl: '{{rootPath}}client' });
+	require(['assess/assessmentFeedback/assessmentFeedback'], function(assessmentFeedback) {
+		assessmentFeedback();
+	});
+</script>
+

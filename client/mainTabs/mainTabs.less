@@ -1,0 +1,61 @@
+@mainTabsBorderSelected: 2px solid black;
+@mainTabsTabsHeight: 46px;
+
+.mainTabs {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.mainTabsTabsTR {
+	height: @mainTabsTabsHeight + 1px;
+}
+.mainTabsTabs {
+	padding-left: 8px;
+	height: @mainTabsTabsHeight;
+	margin: 6px 0 0;
+}
+.mainTabsTabs ul {
+	display: block;
+	height: @mainTabsTabsHeight;
+	line-height: @mainTabsTabsHeight;
+	margin: 0;
+	padding: 0 3em 0 0;
+	text-align: right;
+}
+.mainTabsTab {
+	display: inline-block;
+	padding: 0 16px;
+	height: @mainTabsTabsHeight - 1px;
+	line-height: @mainTabsTabsHeight - 2px;
+	vertical-align: top;
+	text-align: center;
+	white-space: nowrap;
+	border-right: 1px solid black;
+}
+.mainTabsTabLast {
+	border-right: none;
+}
+.mainTabsTab[data-bp-maintab="Course"] {
+	width: 70px;
+}
+.mainTabsTab[data-bp-maintab="My Workbook"] {
+	width: 110px;
+}
+.mainTabsTab a, .mainTabsTab a:link, .mainTabsTab a:visited {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+.mainTabsTab.mainTabSelected {
+	font-weight: bold;
+	height: @mainTabsTabsHeight;
+	font-size: 110%;
+}
+.mainTabsContentTD {
+	vertical-align: top;
+	padding: 0;
+}
+.mainTabsContent {
+	height: 100%;
+}

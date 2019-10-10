@@ -1,0 +1,134 @@
+@chapterTabsBorder: 1px solid #444;
+@chapterTabsBorderSelected: 2px solid black;
+@chapterTabLabelNumberedIndent: .8em;
+@chapterTabHeight: 33px;
+
+.chapterTabs {
+	border-bottom: @chapterTabsBorder;
+}
+.chapterTabsTABLE {
+	border-spacing: 0px;	/* equivalent of cellspacing=0 */
+	border-collapse: collapse;
+	width: 100%;
+}
+.chapterTabsTD {
+	vertical-align: top;
+	text-align: left;
+	padding: 0 0 0 5px;	/* equivalent of cellpadding */
+}
+.chapterTabsSPAN {
+	display: inline-block;
+	height: @chapterTabHeight;
+	width: 100%;
+}
+.chapterTabsUL {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+}
+.chapterTabLI {
+	display: inline-block;
+	border: @chapterTabsBorder;
+	padding: 0 6px 0 8px;
+	font-size: 14px;
+}
+.chapterTabLarge {
+	background-color: rgb(255, 204, 0);
+	margin-right: 5px;
+	border-radius: 4px 4px 0 0;
+	height: 32px;
+	line-height: 32px;
+	width: 6em;
+	vertical-align: top;
+}
+.chapterTabLarge[data-bp-tab=Assessment] {
+	float: right;
+}
+.chapterTabLarge[data-bp-tab=Assessment] .chapterTabLabel {
+	vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/assessment.svg');
+}
+.chapterTabLISelected {
+	font-weight: bold;
+	background-color: #fb0;
+	border-top: @chapterTabsBorderSelected;
+	border-left: @chapterTabsBorderSelected;
+	border-right: @chapterTabsBorderSelected;
+	width: 9em;
+	margin-top: -2px;
+}
+.chapterTabLI[data-bp-tab=Assessment] {
+	width: 2.5em;
+	margin-right: 1em;
+}
+.chapterTabLI.chapterTabLISelected[data-bp-tab=Assessment] {
+	width: 4em;
+}
+.chapterTabLabel {
+	line-height: 15px;
+}
+.chapterTabLI.chapterTabLISelected[data-bp-tab=Assessment] .chapterTabLabel {
+	margin-right: -1em;
+}
+.chapterTabLabelNumbered {
+	margin-left: @chapterTabLabelNumberedIndent;
+}
+.chapterTabLabelNumber {
+	width: @chapterTabLabelNumberedIndent;
+	display: inline-block;
+	float: left;
+	margin-left: -3px;
+}
+.chapterTabIcons {
+	float: right;
+	margin-top: 3px;
+	margin-left: 3px;
+	display: none;
+	white-space: nowrap;
+	line-height: 22px;
+}
+.chapterTabLISelected .chapterTabIcons {
+	display: inline-block;	
+}
+.chapterTabLISelected .chapterTabBadgeArrow.chapterTabMultipleSheets {
+	visibility: visible;
+}
+.chapterTabBadgeArrow {
+	display: inline-block;
+	visibility: hidden;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	font-size: @iconDownArrowSize;
+	text-align: center;
+	vertical-align: middle;
+	color: #666;
+	white-space: nowrap;
+	margin-top: -1px;
+	padding-top: 3px;
+	opacity: 1;
+	text-decoration: none;
+}
+.chapterTabBadgeArrow:hover {
+	border: 1px solid black;
+	color: black;
+	opacity: 1;
+}
+.chapterTabBadgeArrow.popupMenuShowing {
+	background-color: @popupMenuBackgroundColor;
+}
+.chapterTabArrow {
+	font-size: 11px;
+	vertical-align: middle;
+	display: block;
+	width: auto;
+}
+.chapterTabArrow:after {
+	content: "\25BC";
+}

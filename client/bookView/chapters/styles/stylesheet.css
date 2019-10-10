@@ -1,0 +1,859 @@
+@import url("tools.css");
+
+body
+{
+margin:0.5em;
+}
+p
+{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	text-indent: 0em;
+	text-align: left;
+	font-size: 90%;
+}
+a
+{
+	text-decoration: none;
+}
+em
+{
+        font-style: italic;
+}
+strong
+{
+        font-weight: bold;
+}
+.orange
+{
+color:#F89728;
+}
+.black
+{
+color:#000000;
+}
+.u
+{
+text-decoration: underline;
+}
+.gray
+{
+color:#808184;
+}
+.gray1
+{
+color:#424042;
+}
+.chbg
+{
+margin-top: 0em;
+margin-bottom: 0em;
+background-color:#F89728;
+color:#FFFFFF;
+text-indent: 0em;
+padding-top: 2em;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+orphans:2;
+text-align: left;
+}
+.chtit
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 1em;
+font-weight: normal;
+font-size: 150%;
+orphans:2;
+}
+h2
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 0.5em;
+orphans:2;
+font-size: 140%;
+}
+
+.h2a
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 0em;
+margin-bottom: 0em;
+orphans:2;
+font-size: 140%;
+}
+.h2a1
+{
+text-align:center;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 0em;
+orphans:2;
+font-size: 140%;
+}
+h3
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 1em;
+orphans:2;
+font-size: 130%;
+background-color:#F89728;
+padding-top:1em;
+padding-bottom:1em;
+padding-left:0.5em;
+padding-right:0.5em;
+color:#FFFFFF;
+}
+.noindent
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+.fm1
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 110%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+.noindent5
+{
+margin-top: 0.2em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+.noindent0
+{
+margin-top: 0em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+.copy
+{
+margin-top: 0em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:center;
+}
+.copy1
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:center;
+}
+.copy2
+{
+margin-top: 2em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:center;
+}
+.dedi
+{
+margin-top: 3em;
+margin-bottom: 2em;
+margin-left: 2em;
+margin-right: 2em;
+font-size: 90%;
+text-indent: 0em;
+background-color:#F89728;
+color:#FFFFFF;
+orphans:2;
+text-align:center;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+.toctit
+{
+margin-top: 1em;
+margin-bottom: 0em;
+text-indent: 0em;
+text-align:left;
+font-size: 150%;
+orphans:2;
+}
+.toc
+{
+margin-top: 0em;
+margin-bottom: 0em;
+text-indent: 0em;
+text-align:left;
+font-size: 90%;
+orphans:2;
+}
+.toc1
+{
+margin-top: 1em;
+margin-bottom: 0em;
+text-indent: 0em;
+text-align:left;
+font-weight:bold;
+font-size: 90%;
+orphans:2;
+}
+.toca
+{
+margin-top: 0.2em;
+margin-bottom: 0em;
+text-indent: 0em;
+text-align:left;
+font-size: 90%;
+orphans:2;
+}
+.right
+{
+margin-top: 0em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:right;
+}
+.right1
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:right;
+}
+ul.blist
+{
+padding-left:1.2em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+font-size: 90%;
+list-style:disc;
+text-indent: 0em;
+color:#F89728;
+text-align:left;
+orphans:2;
+}
+div.blist
+{
+padding-left:0em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+ul.blist0
+{
+padding-left:1.2em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+list-style:disc;
+text-indent: 0em;
+color:#F89728;
+text-align:left;
+orphans:2;
+}
+ul.blist0a
+{
+padding-left:1.2em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+font-size:90%;
+list-style:disc;
+text-indent: 0em;
+color:#F89728;
+text-align:left;
+orphans:2;
+}
+div.blist0a
+{
+padding-left:0em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+font-size:90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+span.pbo
+{
+	color:#F89728;
+	padding-right: 1em;
+}
+span.pno
+{
+	padding-right: .5em;
+	color:#F89728;
+}
+
+ul.blist li
+{
+margin-top: 1em;
+margin-bottom: 0em;
+padding-left:0em;
+margin-left: 0em;
+text-align: left;
+}
+.h3
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-left: 0em;
+margin-bottom: 1em;
+orphans:2;
+font-size: 130%;
+padding-top: 0em;
+padding-bottom: 0em;
+padding-left: 0em;
+padding-right: 0em;
+}
+.h3a
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-left: 0em;
+margin-bottom: 0em;
+orphans:2;
+font-size: 110%;
+background-color:#FFFFFF;
+padding-top: 0em;
+padding-bottom: 0em;
+padding-left: 0em;
+padding-right: 0em;
+}
+
+ol.nlist{
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+text-align:left;
+padding-left:1.3em;
+font-size:90%;
+list-style: decimal;
+text-indent: 0em;
+color:#F89728;
+}
+div.nlist{
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+text-align:left;
+padding-left:0em;
+font-size:90%;
+list-style: decimal;
+text-indent: 0em;
+}
+ol.nlist1{
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 1em;
+text-align:left;
+font-size:90%;
+list-style: decimal;
+text-indent: 0em;
+}
+div.fig
+{
+margin-top: 1em;
+margin-bottom: 1em;
+text-align:left;
+font-size:100%;
+text-indent: 0em;
+orphans:2;
+border-top: 1px solid#F89728;
+border-bottom: 1px solid#F89728;
+padding-bottom: 0.5em;
+padding-top: 0.5em;
+}
+.caption
+{
+margin-top: 1em;
+margin-bottom: 0.3em;
+text-align:left;
+font-size:90%;
+text-indent: 0em;
+orphans:2;
+}
+.caption1
+{
+margin-top: 0em;
+margin-bottom: 0.5em;
+text-align:left;
+font-size:140%;
+text-indent: 0em;
+orphans:2;
+color:#F9A96A;
+}
+.grbg
+{
+margin-top: 1em;
+margin-bottom: 1em;
+text-align:left;
+font-size:90%;
+text-indent: 0em;
+orphans:2;
+background-color:#E4E5E7;
+padding-top: 1em;
+padding-bottom: 1em;
+padding-left: 1em;
+padding-right: 1em;
+}
+.chtab
+{
+margin-top: 1em;
+margin-bottom: 1em;
+text-align:left;
+text-indent: 0em;
+font-size:100%;
+orphans:2;
+}
+.orcell
+{
+margin-top: 0em;
+margin-bottom: 0em;
+text-align:left;
+font-size:90%;
+text-indent: 0em;
+orphans:2;
+background-color:#F89728;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+color:#FFFFFF;
+border: 1px solid#FFFFFF;
+-webkit-hyphens: none !important;
+adobe-hyphenate: none !important;
+-moz-hyphens: none !important;
+epub-hyphens: none !important;
+}
+.grcell
+{
+margin-top: 0em;
+margin-bottom: 0em;
+text-align:left;
+font-size:90%;
+text-indent: 0em;
+orphans:2;
+background-color:#E4E5E7;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+border: 1px solid#FFFFFF;
+-webkit-hyphens: none !important;
+adobe-hyphenate: none !important;
+-moz-hyphens: none !important;
+epub-hyphens: none !important;
+}
+.grcell1
+{
+margin-top: 0em;
+margin-bottom: 0em;
+text-align:left;
+font-size:90%;
+text-indent: 0em;
+orphans:2;
+background-color:#C7C7C9;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+border: 1px solid#FFFFFF;
+-webkit-hyphens: none !important;
+adobe-hyphenate: none !important;
+-moz-hyphens: none !important;
+epub-hyphens: none !important;
+}
+.center
+{
+margin-top: 0em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:center;
+}
+.center1
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+text-align:center;
+}
+.dgrcell
+{
+margin-top: 0em;
+margin-bottom: 0em;
+text-align:left;
+font-size:90%;
+text-indent: 0em;
+orphans:2;
+background-color:#58575C;
+color:#FFFFFF;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+border: 1px solid#FFFFFF;
+-webkit-hyphens: none !important;
+adobe-hyphenate: none !important;
+-moz-hyphens: none !important;
+epub-hyphens: none !important;
+}
+.h2
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 0em;
+orphans:2;
+font-size: 150%;
+}
+p.fig
+{
+text-align:center;
+text-indent: 0em;
+margin-top: 0em;
+margin-bottom: 1em;
+orphans:2;
+}
+ul.cirlist
+{
+margin-top: 1em;
+margin-bottom: 1em;
+padding-left:1.3em;
+margin-left: 0em;
+font-size: 90%;
+list-style:circle;
+text-indent: 0em;
+color:#F89728;
+text-align:left;
+orphans:2;
+}
+div.cirlist
+{
+margin-top: 1em;
+margin-bottom: 1em;
+padding-left:0em;
+margin-left: 0em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+ul.blist1
+{
+margin-top: 0em;
+margin-bottom: 0em;
+margin-left: 0em;
+font-size: 90%;
+padding-left:1.2em;
+list-style:disc;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+ul.blist1 li
+{
+margin-top: 0.5em;
+margin-bottom: 0em;
+margin-left: 0em;
+padding-left:1.2em;
+list-style:disc;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+ul.blist2
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 90%;
+list-style:disc;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+h4
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 0em;
+margin-bottom: 0.5em;
+orphans:2;
+font-size: 110%;
+}
+.h4
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 0.5em;
+orphans:2;
+font-size: 110%;
+}
+.h4l
+{
+text-align:left;
+text-indent: 0em;
+margin-left: 1em;
+margin-top: 1em;
+margin-bottom: 0.5em;
+orphans:2;
+font-size: 110%;
+}
+.box
+{
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: left;
+font-size: 90%;
+text-indent: 0em;
+orphans:2;
+border: 1px solid black;
+padding-top: 1em;
+padding-bottom: 1em;
+padding-left: 1em;
+padding-right: 1em;
+}
+.note-head
+{
+	margin-top: 1em;
+	margin-bottom: .5em;
+	text-align: left;
+	text-indent: 0em;
+	font-size: 100%;
+        orphans:2;
+}
+.orline
+{
+        border-top: 1px solid#F89728;
+	margin-top: 1em;
+	margin-bottom: .5em;
+        padding-bottom: 1em;
+        text-indent: 0em;
+}
+ul.none
+{
+list-style: none;
+margin-top: 0em;
+margin-bottom: 0em;
+margin-left: 0.5em;
+text-indent: -0.6em;
+padding: 0em;
+text-align: left;
+}
+ul.none li
+{
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+text-align: left;
+}
+ul.cirlist li
+{
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+text-align: left;
+}
+.title
+{
+margin-top: 0em;
+margin-bottom: 0em;
+margin-left: 2em;
+font-size: 150%;
+text-indent: 0em;
+text-align: left;
+}
+sup
+{
+font-size: 60%;
+}
+.subtit
+{
+margin-top: 0.5em;
+margin-bottom: 0em;
+margin-left: 5em;
+font-size: 130%;
+text-indent: 0em;
+text-align: left;
+}
+.aut
+{
+margin-top: -2em;
+margin-bottom: 0em;
+margin-left: 2em;
+font-size: 120%;
+text-indent: 0em;
+text-align: left;
+}
+.footpara
+{
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	font-size: 90%;
+	text-align: left;
+	text-indent: 0em;
+	orphans: 2;
+}
+.logo
+{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	text-align: center;
+	text-indent: 0em;
+	orphans: 2;
+}
+.tfig
+{
+text-align:center;
+text-indent: 0em;
+margin-top: 0.5em;
+margin-bottom: 1em;
+orphans:2;
+}
+.ext
+{
+text-align:left;
+text-indent: 1em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 1em;
+font-size: 100%;
+orphans:2;
+}
+.bq
+{
+text-align:left;
+text-indent: 0em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 1em;
+font-size: 75%;
+orphans:2;
+}
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+.noindent2
+{
+margin-top: 1em;
+margin-bottom: 1em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+
+.noindentq
+{
+margin-top: 1em;
+margin-bottom: 0em;
+font-size: 130%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+
+.noindentb
+{
+margin-top: 1em;
+margin-bottom: 1em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+
+.noindent00
+{
+margin-top: 0em;
+margin-bottom: 1em;
+font-size: 90%;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+.blist
+{
+margin-top: .5em;
+margin-bottom: 0em;
+text-indent: -1.3em;
+margin-left: 1.3em;
+text-align:left;
+orphans:2;
+}
+.nlist
+{
+margin-top: .5em;
+margin-bottom: 0em;
+text-indent: -1.25em;
+margin-left: 1.25em;
+text-align:left;
+orphans:2;
+}
+div.blist0
+{
+padding-left:1.2em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0em;
+text-indent: 0em;
+text-align:left;
+orphans:2;
+}
+div.none
+{
+margin-top: 0em;
+margin-bottom: 0em;
+margin-left: 1.25em;
+text-indent: -0.6em;
+padding: 0em;
+text-align: left;
+}
+.epub_inline_block { display:inline-block; }
+.amazon_inline_block { display:none; }
+
+img.chapter_circles 
+{
+	width:146px;
+	height:21px;
+}
+

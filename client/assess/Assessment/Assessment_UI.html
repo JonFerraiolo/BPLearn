@@ -1,0 +1,125 @@
+<div class='AssessmentDIV'>
+	<div class='AssessmentTop'>
+		<div class='AssessmentTopTitle'>
+			<div class='AssessmentTopTitleTitle'>
+				Personal Brand Assessment Questionnaire
+			</div>
+		</div>
+		<div class='AssessmentExplanation AssessmentExplanationNew'>
+			<p><span class='AssessmentHighlightButton'>Status</span>: No invitations have been sent yet. </p>
+		</div>
+		<div class='AssessmentExplanation AssessmentExplanationPending'>
+			<p class='notLast'><span class='AssessmentHighlightButton'>Status</span>: This Personal Brand Assessment questionnaire is open, with a due date of {{DUEDATE}}. 
+				The questionnaire has been sent to {{NUM_INVITEES}} colleagues for feedback, and so far, {{NUM_RESPONDEES}} have provided feedback. 
+				You can click on the <span class='AssessmentHighlightButton'>"Close Questionnaire"</span> button at any time 
+				(under the <span class='AssessmentHighlightButton'>"Results"</span> tab) 
+				at which point the questionnaire will be frozen and you will be able to see the results.</p>
+		</div>
+		<div class='AssessmentExplanation AssessmentExplanationCompletedUnfrozen'>
+			<p class='notLast'><span class='AssessmentHighlightButton'>Status</span>: This Personal Brand Assessment questionnaire has passed its due date of {{DUEDATE}}. 
+			So far, {{NUM_RESPONDEES}} out of {{NUM_INVITEES}} have provided feedback. 
+			You can click on the <span class='AssessmentHighlightButton'>"Close Questionnaire"</span> button at any time 
+				(under the <span class='AssessmentHighlightButton'>"Results"</span> tab) 
+				at which point the questionnaire will be frozen and you will be able to see the results. 
+				Until you close the questionnaire, you can still invite additional people or change the due date.</p>
+		</div>
+		<div class='AssessmentExplanation AssessmentExplanationCompletedFrozen'>
+			<p><span class='AssessmentHighlightButton'>Status</span>: This Personal Brand Assessment questionnaire has been closed. No further changes can be made. </p>
+		</div>
+	</div>
+	<div class='AssessmentTabs'>
+		<ul>
+			<li data-bp-tab='About'><a href=''>About</a></li>
+			<li data-bp-tab='SelfAssessment'><a href=''>Self-Assessment</a></li>
+			<li data-bp-tab='Invitations'><a href=''>Invitations</a></li>
+			<li data-bp-tab='Results'><a href=''>Results</a></li>
+		</ul>
+	</div>
+	<div class='AssessmentTabsDivider'></div>
+	<div class='AssessmentAbout'>
+		<div class='AssessmentQuestionnaireTitleAbout'>About the Personal Brand Assessment Questionnaire</div>
+		<p>The Personal Brand Assessment questionnaire allows you to ask colleagues for feedback on your personal brand. </p>
+		<p>There are four tabs:</p>
+		<ul>
+			<li><b>About</b> - (Current tab) Provides background information and instructions for how to set up a Personal Brand Assessment auestionnaire.</li>
+			<li><b>Self-Assessment</b> - (Optional step) Allows you to fill out the assessment form yourself so that you can compare your self image with your colleagues' feedback.</li>
+			<li><b>Invitations</b> - On this tab, you enter the names and emails of the people to whom you would like to send the questionnaire, and also enter a due date.  When all entries have been provided, click <span class='AssessmentHighlightButton'>"Send Invitations"</span>, which will send emails to your colleagues 
+			with instructions on how to provide feedback. </li>
+			<li><b>Results</b> - After the due date arrives, you can click on the <span class='AssessmentHighlightButton'>"Close Questionnaire"</span> button, which appears on the <b>Invitations</b> and <b>Results</b> tabs. 
+			After closing the questionnaire, the software 
+			will consolidate (and partially randomize) the feedback, and you will be able to see the feedback by going to the Results tab.</li>
+		</ul>
+	</div>
+	<div class='AssessmentInvitations'>
+		<div class='assessInvitees'>
+			<div class='FormTitleDIV' data-bp-field='Assessment.Title'>
+				<div class='FormTitleMainContent'>
+					<span class='FormTitleLabelContainer'>
+						<span class='FormTitleLabel'>Assessment Title:</span>
+					</span>
+					<span class='FormTitleFieldSpan'>
+						<textarea class='FormTitleTextArea' autocomplete='off' rows='1' placeholder='Title for this Assessment'></textarea>
+					</span>
+				</div>
+			</div>
+			<div class='assessInviteesDueDateError'></div>
+			<div class='assessInviteesDueDateDIV'>
+				<label class='assessInviteesDueDateLABEL'>Due date:</label>
+				<input class='assessInviteesDueDate' type='date'></input>
+				<span class='assessInviteesDueDateNote'></span>
+			</div>
+			<div class='assessInviteesTableDIV'>		<!-- Note: table rows for existing invitees added by JavaScript -->
+				<div class='assessInviteesExistingDIV'>
+					<div class='assessInviteesExistingLabel'>Previous invitations - invitations have already been sent to these people:</div>
+					<!-- Note: table rows for added invitees added by JavaScript -->
+					<table class='assessInviteesTABLE assessInviteesExistingTABLE'>
+						<tr>
+							<th class='assessInviteesNumberTD'></th>
+							<th class='assessInviteesFirstNameTD'>First name</th>
+							<th class='assessInviteesLastNameTD'>Last name</th>
+							<th class='assessInviteesEmailTD'>Email</th>
+						</tr>
+					</table>
+				</div>
+				<div class='assessInviteesNewDIV'>
+					<div class='assessInviteesNewLabel'>New invitations - will be sent when you click "Send invitations":</div>
+					<div class='assessInviteesErrors'></div>
+					<!-- Note: table rows for added invitees added by JavaScript -->
+					<table class='assessInviteesTABLE assessInviteesNewTABLE'>
+						<tr>
+							<th class='assessInviteesNumberTD'></th>
+							<th class='assessInviteesFirstNameTD'>First name</th>
+							<th class='assessInviteesLastNameTD'>Last name</th>
+							<th class='assessInviteesEmailTD'>Email</th>
+							<th class='assessInviteesCustomInviteTD'></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class='assessInviteesButtonDIV'>
+				<button class='assessInviteesUpdateBUTTON' disabled='disabled'>Send invitations</button>
+			</div>
+		</div>
+	</div>
+	<div class='AssessmentQuestionnaire'>
+		<div class='AssessmentQuestionnaireTitleSelf'>Self-Assessment (optional)</div>
+		<div class='AssessmentQuestionnaireTitleResults'>Questionnaire Results (Consolidated)</div>
+		<div class='AssessmentNoInvitationsYet'>
+			<div class='AssessmentFinalizeNote'>
+				No invitations have been sent yet.
+			</div>
+		</div>
+		<div class='AssessmentNotFinalized'>
+			<div class='AssessmentFinalizeNote'>
+				The questionnaire has not been closed yet. 
+				To close the questionnaire, click on the <span class='AssessmentHighlightButton'>"Close Questionnaire"</span> button.
+			</div>
+			<div class='AssessmentFinalizeSPAN'>
+				<div class='AssessmentFinalizeDIV'>
+					<button class='AssessmentFinalizeBUTTON'>Close Questionnaire</button>
+				</div>
+			</div>
+		</div>
+{{ASSESSMENT_FORM}}
+	</div>
+</div>

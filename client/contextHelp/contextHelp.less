@@ -1,0 +1,104 @@
+@contextHelpIconSize: 20px;
+@contextHelpTDPadding: 3px 6px;
+@contextHelpHeight: 200px;
+
+.contextHelpDIV {
+	border: 1px solid black;
+	background-color: #eee;
+	height: @contextHelpHeight;
+	display: none;
+	overflow: hidden;
+}
+.contextHelpDIV * {
+	font-size: 15px;
+}
+.contextHelpTABLE {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.contextHelpIconTD {
+	width: 1px;
+	vertical-align: top;
+	padding: @contextHelpTDPadding;
+}
+.contextHelpContentTD {
+	width: 40%;
+	border-right: 1px solid black;
+	vertical-align: top;
+	padding: @contextHelpTDPadding;
+	height: @contextHelpHeight;
+}
+.contextHelpContentDIV {
+	height: 100%;
+	overflow: scroll;
+}
+.contextHelpExamplesTD {
+	width: 60%;
+	vertical-align: top;
+	padding: @contextHelpTDPadding;
+	height: @contextHelpHeight;
+}
+.contextHelpExamplesDIV {
+	height: 100%;
+	overflow: scroll;
+}
+.contextHelpExamplesLABEL {
+	margin-right: .5em;
+}
+.contextHelpExamplesSELECT {
+	display: none;
+}
+.contextHelpIconSPAN {
+	display: inline-block;
+	width: @contextHelpIconSize;
+	height: @contextHelpIconSize;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/help.svg');
+	background-repeat: no-repeat;
+}
+.contextHelpExamplesTitle {
+	margin-bottom: .3em;
+}
+.contextHelpFieldExamplesTABLE {
+	margin-left: 2em;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.contextHelpFieldExamplesTABLE td {
+	padding: @contextHelpTDPadding;
+	border: 1px solid black;
+}
+.contextHelpAnimMixin(@animName; @fillMode:none; @duration:.3s; @timing:linear) {
+	-webkit-animation-name: @animName;
+	animation-name: @animName;
+	-webkit-animation-duration: @duration;
+	animation-duration: @duration;
+	-webkit-animation-timing-function: @timing;
+	animation-timing-function: @timing;
+	-webkit-animation-fill-mode: @fillMode;
+	animation-fill-mode: @fillMode;
+}
+.contextHelpGrowAnim { 
+	.contextHelpAnimMixin(@animName:contextHelpGrowKeyFrames); 
+}
+@-webkit-keyframes contextHelpGrowKeyFrames { from { height: 0px; } to { height: @contextHelpHeight; } }
+@keyframes contextHelpGrowKeyFrames { from { height: 0px; } to { height: @contextHelpHeight; } }
+.contextHelpShrinkAnim { 
+	.contextHelpAnimMixin(@animName:contextHelpShrinkKeyFrames); 
+}
+@-webkit-keyframes contextHelpShrinkKeyFrames { from { height: @contextHelpHeight; } to { height: 0px; } }
+@keyframes contextHelpShrinkKeyFrames { from { height: @contextHelpHeight; } to { height: 0px; } }
+
+/* When a form appears embedded within help examples, hide/show certain elements */
+@contextExampleFormFieldFont: normal normal normal 11px/normal '.HelveticaNeueDeskInterface-Regular';
+.contextHelpExamplesDIV .FormTitleDIV,
+.contextHelpExamplesDIV .ContextHelpIcon {
+	display: none;
+}
+.contextHelpExamplesDIV .contextHelpExamplesSELECT {
+	display: inline;
+}
+.contextHelpExamplesDIV textarea,
+.contextHelpExamplesDIV input,
+.contextHelpExamplesDIV select {
+	font: @contextExampleFormFieldFont;
+}

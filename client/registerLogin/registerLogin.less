@@ -1,0 +1,224 @@
+@registerLoginHeaderFontSize: 22px;
+@registerLoginInputFontSize: 16px;
+@registerLoginOuterWidth: 540px;
+@registerLoginSlideContainerWidth: 480px;
+
+html.registerLogin, body.registerLogin {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.registerLoginPageOuter {
+	text-align: center;
+	background: #db8;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.registerLoginPageInner1 {
+	overflow: scroll;
+	top: 5px;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	text-align: center;
+}
+.registerLoginPageInner2 {
+	overflow: scroll;
+	display: inline-block;
+	background: white;
+	width: @registerLoginOuterWidth;
+	height: 100%;
+}
+.registerLoginPageTABLE {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.registerLoginPageHeaderTD {
+	padding: 5px 0;
+	height: 80px;
+	width: 100%;
+}
+.registerLoginPageHeaderTD .registerLoginBannerANCHOR {
+	margin-left: 10px;
+	display: inline-block;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/KarenKangBrandingPays.svg');
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 200px;
+	text-decoration: none;
+	pointer: cursor;
+}
+.registerLoginHead {
+	font-size: @registerLoginHeaderFontSize;
+	text-align: center;
+}
+.registerLoginPageBodyTD {
+	text-align: center;
+	font-size: @registerLoginInputFontSize;
+}
+
+/* Style declarations for slide control to swap between register and login panes */
+.registerLoginSlideParent {
+	width: @registerLoginSlideContainerWidth;
+	text-align: left;
+	display: inline-block;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+.registerSlideInContainer, .loginSlideInContainer, .registerPaymentSlideInContainer, .resetPasswordSlideInContainer  {
+	width: @registerLoginSlideContainerWidth;
+	display: inline-block;
+	overflow: hidden;
+	white-space: normal;
+	vertical-align: top;
+}
+.registerLoginAnimMixin(@animName; @fillMode:none; @duration:.6s; @timing:linear) {
+	-webkit-animation-name: @animName;
+	animation-name: @animName;
+	-webkit-animation-duration: @duration;
+	animation-duration: @duration;
+	-webkit-animation-timing-function: @timing;
+	animation-timing-function: @timing;
+	-webkit-animation-fill-mode: @fillMode;
+	animation-fill-mode: @fillMode;
+}
+.registerLoginSlideFromRightAnim { 
+	.registerLoginAnimMixin(@animName:registerLoginSlideFromRightKeyFrames); 
+}
+@-webkit-keyframes registerLoginSlideFromRightKeyFrames { from { margin-left: 0; } to { margin-left: -100%; } }
+@keyframes registerLoginSlideFromRightKeyFrames { from { margin-left: 0; } to { margin-left: -100%; } }
+.registerLoginSlideFromLeftAnim { 
+	.registerLoginAnimMixin(@animName:registerLoginSlideFromLeftKeyFrames); 
+}
+@-webkit-keyframes registerLoginSlideFromLeftKeyFrames { from { margin-left: -100%; } to { margin-left: 0; } }
+@keyframes registerLoginSlideFromLeftKeyFrames { from { margin-left: -100%; } to { margin-left: 0; } }
+
+.registerLoginHead {
+	margin: .75em 0 .75em;
+}
+.registerLoginBodyPARA {
+	margin: 0;
+}
+.gotoAlternatePARA {
+	margin: 2em 0 .5em 1em;
+}
+.gotoLoginSPAN, .gotoRegisterSPAN {
+	display: block;
+	margin: 0 0 1em;
+}
+.pleaseRegisterSPAN, .pleaseLoginSPAN {
+	font-weight: bold;
+	display: block;
+	background-color: #eaeaea;
+	border-color: 1px solid #d0d0d0;
+	padding: 3px;
+	margin: 1em 0;
+}
+.registerBenefitsPARA {
+	margin: 0 0 1em;
+}
+.userInfoErrors, .paymentErrors, .loginErrors, .resetPasswordErrors {
+	margin: .2em 0 .5em;
+	color: red;
+	font-weight: bold;
+}
+.registerUserInfoContainerDIV, .loginFieldsContainerDIV, .registerPaymentFieldsContainerDIV, .resetPasswordFieldsContainerDIV {
+	text-align: left;
+	padding-left: 1em;
+}
+.registerUserInfoDIV, .loginFieldsDIV, .registerPaymentFieldsDIV, .resetPasswordFieldsDIV {
+	display: inline-block;
+	text-align: left;
+}
+.registerLoginFormFieldDIV {
+	margin: .2em 0;
+}
+.registerLoginFormFieldSpacer {
+	height: 10px;
+}
+.registerLoginINPUT {
+	width: 300px;
+	font-size: @registerLoginInputFontSize;
+}
+.registerLoginINPUT.registerLoginInvalidField {
+	border: 1px solid red;
+	background-color: pink;
+}
+.registerLoginRequired {
+	width: 1.5em;
+	text-align: left;
+	padding-left: .5em;
+	color: red;
+	font-size: 120%;
+}
+.registerLoginRequired:after {
+	content: '\2217'
+}
+.registerImplicitAgreementDIV {
+	margin: .75em 0 .5em 1em;
+}
+.registerButtonDIV, .loginButtonDIV, .registerPaymentButtonDIV, .resetPasswordButtonDIV {
+	margin: 1.75em 0 1em;
+	text-align: center;
+}
+.registerButtonDIV button, .loginButtonDIV button, .registerPaymentButtonDIV button, .resetPasswordButtonDIV button {
+	margin: 0 .5em;
+	padding: 2px 4px;
+	font-size: @registerLoginInputFontSize;
+	background: lightgray;
+	border: 1px solid darkgray;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 1px 1px 1px #444;
+}
+.registerPaymentButtonDIV button, .resetPasswordButtonDIV button {
+	margin: 0 2em;
+}
+.registerPaymentValueTD {
+	padding-left: .5em;
+	font-weight: bold;
+}
+.loginForgotPasswordDIV {
+	text-align: left;
+	margin-top: 2em;
+}
+.loginForgotPasswordANCHOR {
+	cursor: pointer;
+}
+.loginForgotPasswordANCHOR:link, .loginForgotPasswordANCHOR:visited {
+	text-decoration: underline;
+	color: black;
+}
+.registrationSuccess {
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px #888;
+	background: #f8f8f8;
+	padding: 1.5em;
+}
+.registerLoginShowPasswordCheckbox,
+.resetPasswordShowPasswordCheckbox {
+	margin: 0 .5em 0 1em;
+}
+.registerLoginTOSCheckbox {
+	margin-right: .75em;
+}
+.registerLoginPleaseLogin {
+	margin-bottom: 1em;
+}
+.registerGoBackDIV {
+	margin: 3em 0 1em;
+	text-align: left;
+}
+.registerGoBackDIV a,
+.registerGoBackDIV a:link,
+.registerGoBackDIV a:visited {
+	text-decoration: underline;
+	color: black;
+}

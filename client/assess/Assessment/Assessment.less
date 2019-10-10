@@ -1,0 +1,232 @@
+@import "./assessInvitees.less";
+
+@AssessmentTitleColor: rgb(255,129,10);
+@AssessmentExplanationFontSize: 15px;
+@AssessmentTitleFontSize: 19px;
+@AssessmentSectionLabelFontSize: 17px;
+@AssessmentFormFontSize: 15px;
+@AssessmentTabsBorder: 1px solid black;
+@AssessmentTabsBorderSelected: 2px solid black;
+
+.AssessmentDIV {
+	padding-bottom: 1em;
+}
+.AssessmentTop {
+	padding: 6px 20px 4px 20px;
+	margin-bottom: 3px;
+}
+.AssessmentTopTitle {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.AssessmentTopTitleTitle {
+	line-height: 26px;
+}
+.AssessmentExplanation {
+	font-size: @AssessmentExplanationFontSize;
+	padding: 3px 90px 3px 6px;
+	background-color: #f0faff;
+	border: 1px solid #aaccff;
+	margin-bottom: 1em;
+}
+.AssessmentExplanation p {
+	margin: 0;
+}
+.AssessmentExplanation p.notFirst {
+	margin-top: .7em;
+}
+.AssessmentExplanation p.notLast {
+	margin-bottom: .7em;
+}
+.AssessmentFinalizeNote {
+	margin: 2em 0 3em;
+}
+.AssessmentFinalizeDIV {
+	text-align: center;
+	margin: 1em;
+}
+.AssessmentInviteesSPAN {
+	display: inline-block;
+	font-size: @AssessmentExplanationFontSize;
+	float: right;
+	padding-top: 2px;
+	text-align: center;
+}
+.AssessmentFinalizeBUTTON {
+	padding: 2px 4px;
+	font-size: @AssessmentExplanationFontSize;
+	background-color: lightblue;
+	border: 1px solid darkgray;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 1px 1px 1px #444;
+}
+.AssessmentExplanation ul {
+	margin-top: .4em;
+	margin-bottom: .4em;
+}
+.AssessmentHighlightButton {
+	color: #00d;
+	font-weight: bold;
+}
+.AssessmentFinalizeBUTTON:hover {
+	cursor: pointer;
+}
+.AssessmentBrandingPaysLogoDIV {
+	padding: 20px 40px 0px;
+}
+.AssessmentBrandingPaysLogo {
+	height: @logoHeight;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/KarenKangBrandingPays.svg');
+	background-repeat: no-repeat;
+}
+.AssessmentForm {
+	padding: 10px 40px 50px 80px;
+}
+.AssessmentTitle {
+	color: @AssessmentTitleColor;
+	font-size: @AssessmentTitleFontSize;
+	margin: 15px 0 0;
+	font-weight: bold;
+}
+.AssessmentIntro {
+	margin: 10px 0 0;
+}
+.AssessmentSection {
+	font-size: @AssessmentFormFontSize;
+	margin-top: 10px;
+}
+.AssessmentSectionLabel {
+	color: @AssessmentTitleColor;
+	font-size: @AssessmentSectionLabelFontSize;
+	margin: 5px 0;
+}
+.AssessmentTextAreaDIV {
+	padding: 5px 0;
+}
+.AssessmentSection textarea {
+	font-size: @AssessmentFormFontSize;
+	width: 100%;
+	min-height: 3em;
+}
+.AssessmentInviterLABEL {
+	margin-right: 1em;
+}
+.AssessmentQuestion {
+	position: relative;
+}
+.AssessmentQuestion * {
+	vertical-align: middle;
+}
+.AssessmentDIV .ContextHelpIcon {
+	margin-left: .5em;
+	position: static;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/help.svg');
+}
+.AssessmentDIV .ContextHelpContent {
+	margin-top: .3em;
+}
+.AssessmentTabsDivider {
+	height: 1px;
+	border-top: 1px solid lightgray;
+	margin: 2px 0 0;
+}
+.AssessmentDIV .FormTitleDIV {
+	margin: 0;
+}
+.AssessmentDIV .FormTitleLabelContainer {
+	padding-left: 0;
+}
+.AssessmentInvitations,
+.AssessmentQuestionnaire {
+	padding: 1em;
+}
+.AssessmentTabs {
+	text-align: center;
+}
+.AssessmentTabs ul {
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}
+.AssessmentTabs li {
+	display: inline-block;
+	border: @AssessmentTabsBorder;
+	border-radius: 4px 4px 0 0;
+	padding: 0 6px 0 8px;
+	font-size: 12px;
+	background-color: #adf;
+	cursor: pointer;
+}
+.AssessmentTabs li.AssessmentTabSelected {
+	background-color: #8bf;
+	font-weight: bold;
+	border: @AssessmentTabsBorderSelected;
+	border-bottom: @AssessmentTabsBorder;
+}
+.AssessmentTabs li a {
+	text-decoration: none;
+	color: black;
+}
+.AssessmentAbout {
+	padding: 1em;
+}
+.AssessmentDIV .FormTitleTextArea {
+	font-size: 15px;
+}
+.AssessmentQuestionnaireTitleAbout,
+.AssessmentQuestionnaireTitleSelf,
+.AssessmentQuestionnaireTitleInvitations,
+.AssessmentQuestionnaireTitleResults {
+	font-size: 16px;
+	text-align: center;
+	padding: 0 0 .4em;
+	font-weight: bold;
+}
+.AssessmentDIV .AssessmentBrandingPaysLogoDIV {
+	display: none;
+}
+
+/* Styling overrides when Assessment page is embedded in the assessment feedback UI sent to invitees */
+body.assessmentFeedback .AssessmentInviteesSPAN,
+body.assessmentFeedback .AssessmentTopTitle,
+body.assessmentFeedback .FormTitleDIV,
+body.assessmentFeedback .AssessmentTabsDivider,
+body.assessmentFeedback .AssessmentQuestionnaireTitleSelf,
+body.assessmentFeedback .AssessmentQuestionnaireTitleResults {
+	display: none;
+}
+body.assessmentFeedback .AssessmentTop {
+	display: none;
+}
+body.assessmentFeedback .AssessmentBrandingPaysLogoDIV {
+	display: none;
+}
+body.assessmentFeedback .pageHeaderRightTD {
+	padding-left: 2em;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+body.assessmentFeedback .pageHeaderRightTD:after {
+	content: '!'
+}
+.assessmentFinalizeSuccess {
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px #888;
+	background: #f8f8f8;
+	padding: 1.5em;
+}
+body.assessmentFeedback .FormTitleDIV {
+	display: none;
+}
+body.assessmentFeedback .AssessmentDIV .ContextHelpIcon {
+	display: inline-block;
+}
+body.assessmentFeedback .AssessmentInvitations {
+	display: none;
+}

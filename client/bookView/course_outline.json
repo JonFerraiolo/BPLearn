@@ -1,0 +1,106 @@
+{
+	"chapters": [
+		{ "id": "intro", "label": "Introducing the BrandingPays e-Learning Course" },
+		{ "id": "tc", "label":"Take Charge of Your Personal Brand", "modules": [
+			{ "id": "tc_political", "label": "Branding a Political Candidate" },
+			{ "id": "tc_what_is", "label": "What Is Personal Branding?" },
+			{ "id": "tc_myths", "label": "Personal Branding Myths" },
+			{ "id": "tc_benefits", "label": "What Are the Benefits of Personal Branding?" },
+			{ "id": "tc_throughout_life", "label": "Rebranding Throughout Life" },
+			{ "id": "tc_your_goal", "label": "Your Goal for Branding" },
+			{ "id": "tc_journey", "label": "The Branding Journey" },
+			{ "id": "tc_cake_icing", "label": "Every Brand Needs Cake and Icing" },
+			{ "id": "tc_assessment", "label": "Personal Branding Assessment Questionnaire" },
+			{ "id": "tc_five_steps", "label": "BrandingPays System: Five Steps to Your Cake and Icing" }
+		]},
+		{ "id": "posn", "label":"Step 1: Positioning", "modules": [
+			{ "id": "posn_posn_stmt", "label": "Positioning Statement" },
+			{ "id": "posn_your_goal", "label": "What Is Your Goal?" },
+			{ "id": "posn_target", "label": "Who Is Your Target Audience?" },
+			{ "id": "posn_problem", "label": "Problem or Opportunity Statement: What do <em>they</em> need?" },
+			{ "id": "posn_category", "label": "Category: \"I am ..\"" },
+			{ "id": "posn_value_prop", "label": "Value Proposition: How can <em>you</em> provide the solution?" },
+			{ "id": "posn_differentiation", "label": "Differentiation: Why are you the best one to provide it?" },
+			{ "id": "posn_evidence", "label": "Evidence: How can you prove it?" },
+			{ "id": "posn_iterate", "label": "Iterate to Hone Your Positioning" }
+		]},
+		{ "id": "msg", "label":"Step 2: Messaging", "modules": [
+			{ "id": "msg_clarity_and_impact", "label": "Message for Clarity and Impact" },
+			{ "id": "msg_elev_pitch", "label": "The Elevator Pitch and Your Evidence" },
+			{ "id": "msg_samples", "label": "Sample Elevator Pitches" },
+			{ "id": "msg_different_audiences", "label": "Different Value Messages for Different Audiences" },
+			{ "id": "msg_back_up_with_evidence", "label": "Back Your Positioning Claims with Evidence Messages" },
+			{ "id": "msg_linkedin", "label": "How the Positioning Statement Can Feed Your LinkedIn Profile" },
+			{ "id": "msg_tagline", "label": "What Is Your Tagline?" },
+			{ "id": "msg_summary", "label": "Chapter 3 Summary" },
+			{ "id": "msg_action_list", "label": "Chapter 3 Action List" }
+		]},
+		{ "id": "bs", "label":"Step 3: Brand Strategy", "modules": [
+			{ "id": "bs_how_to", "label": "How to Develop Your Brand Strategy" },
+			{ "id": "bs_platform", "label": "Brand Strategy Platform" },
+			{ "id": "bs_descriptors", "label": "Key Brand Descriptors" },
+			{ "id": "bs_samples", "label": "Sample Brand Strategy Platforms" },
+			{ "id": "bs_summary", "label": "Chapter 4 Summary" },
+			{ "id": "bs_action_list", "label": "Chapter 4 Action List" }
+		]},
+		{ "id": "eco", "label": "Step 4: Ecosystem", "modules": [
+			{ "id": "eco_leverage", "label": "Ecosystem: Leverage Influencers to Establish Brand" },
+			{ "id": "eco_to_the_people", "label": "Taking It to the People" },
+			{ "id": "eco_what_is", "label": "What Is the Brand Ecosystem?" },
+			{ "id": "eco_90_10", "label": "The 90/10 Rule" },
+			{ "id": "eco_model", "label": "The Brand Ecosystem Model" },
+			{ "id": "eco_take_time", "label": "Take Time for Relationship Building" },
+			{ "id": "eco_four_keys", "label": "Four Keys for Strong Ecosystem Relationships" },
+			{ "id": "eco_identifying", "label": "Identifying Influencers" },
+			{ "id": "eco_managing", "label": "Managing Your Ecosystem Relationships" },
+			{ "id": "eco_networking", "label": "A Word About Networking" },
+			{ "id": "eco_summary", "label": "Chapter 5 Summary" },
+			{ "id": "eco_action_list", "label": "Chapter 5 Action List" }
+		]},
+		{ "id": "ap", "label": "Step 5: Action Plan", "modules": [
+			{ "id": "ap_build_your", "label": "Build Your Brand Action Plan" },
+			{ "id": "ap_360_degree", "label": "A 360-Degree Brand" },
+			{ "id": "ap_brand_improvement", "label": "Brand Improvement" },
+			{ "id": "ap_brand_communication", "label": "Brand Communication" },
+			{ "id": "ap_four_phases", "label": "Four Phases of Brand Communication Using the Ecosystem Model" },
+			{ "id": "ap_example", "label": "Brand Action Example" },
+			{ "id": "ap_lessons", "label": "Lessons from Rebranding an Entrepreneurial Company" },
+			{ "id": "ap_advice", "label": "A Word of Advice for Entrepreneurs" },
+			{ "id": "ap_summary", "label": "Chapter 6 Summary" },
+			{ "id": "ap_action_list", "label": "Chapter 6 Action List" }
+		]},
+		{ "id": "360", "label": "360-Degree Branding: Vision, Symbols, Words and Deeds", "modules": [
+			{ "id": "360_care2", "label": "The Care2 Story: Rebranding from the Inside Out" },
+			{ "id": "360_leadership", "label": "Vision or Thought Leadership Branding" },
+			{ "id": "360_image_basics", "label": "Your Look, Your Image: The Basics" },
+			{ "id": "360_multimedia", "label": "Branding in Multimedia" },
+			{ "id": "360_summary", "label": "Chapter 7 Summary" },
+			{ "id": "360_action_list", "label": "Chapter 7 Action List" }
+		]},
+		{ "id": "social", "label": "Portable Branding and Social Media: Getting Started", "modules": [
+			{ "id": "social_getting_started", "label": "Portable Branding and Social Media: Getting Started" },
+			{ "id": "social_why", "label": "Why You Need to Be in Social Media" },
+			{ "id": "social_choose", "label": "Choose Your Social Networks" },
+			{ "id": "social_own", "label": "Own Your Online Real Estate" },
+			{ "id": "social_search", "label": "Your Google Search Results" },
+			{ "id": "social_avatar", "label": "Your Avatar" },
+			{ "id": "social_blog", "label": "To Blog or Not to Blog" },
+			{ "id": "social_promote", "label": "Should You Promote Your Personal Brand or Your Business Brand Online?" },
+			{ "id": "social_reputation", "label": "Online Reputation Management" },
+			{ "id": "social_few_things", "label": "Do a Few Things Well" },
+			{ "id": "social_summary", "label": "Chapter 8 Summary" },
+			{ "id": "social_action_list", "label": "Chapter 8 Action List" }
+		]},
+		{ "id": "concl", "label": "Conclusion", "modules": [
+			{ "id": "concl_new_opp", "label": "Reinvent Your Brand for New Opportunities" },
+			{ "id": "concl_four_strategies", "label": "Four Stories on Overcoming Diversity Challenges in Personal Branding and Life" }
+		]},
+		{ "id": "other", "label": "Other", "modules": [
+			{ "id": "other_forward", "label": "Forward" },
+			{ "id": "other_reading", "label": "Further Reading" },
+			{ "id": "other_ack", "label": "Acknowledgments" },
+			{ "id": "other_author", "label": "About the Author" },
+			{ "id": "other_resources", "label": "Resources" }
+		]}
+	]
+}

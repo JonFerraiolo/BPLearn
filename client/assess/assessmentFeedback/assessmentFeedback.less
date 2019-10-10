@@ -1,0 +1,65 @@
+@pageHeaderIconWidth: 32px;
+@pageHeaderIconHeight: 26px;
+@pageHeaderDownArrowIconHeight: 20px;
+@pageHeaderIconMargin: 0 0 0 8px;
+@pageFontFamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+@pageFontWeight: 300;
+@logoWidth: 200px;
+@logoHeight: 46px;
+
+body.assessmentFeedback {
+	padding: 4px;
+	margin: 0px;
+	font-family: @pageFontFamily;
+	font-weight: @pageFontWeight;
+}
+body.assessmentFeedback .pageTableTABLE, .pageHeaderTABLE {
+	border-spacing: 0px;	/* equivalent of cellspacing=0 */
+	border-collapse: collapse;
+}
+body.assessmentFeedback .pageTableHeaderTD, 
+body.assessmentFeedback pageTableBodyTD, .pageHeaderLeftTD, .pageHeaderRightTD {
+	padding: 0px;	/* equivalent of cellpadding=0 */
+}
+body.assessmentFeedback .pageTableTABLE {
+	width: 100%;
+	height: 100%;
+}
+body.assessmentFeedback .pageTableHeaderTR {
+	height: 52px;
+}
+body.assessmentFeedback .pageTableHeaderTD.pageTableHeaderTD {
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+body.assessmentFeedback .pageHeaderTABLE {
+	width: 100%;
+	height: 46px;
+	line-height: 32px;
+}
+body.assessmentFeedback .pageHeaderLeftTD.pageHeaderLeftTD {
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/KarenKangBrandingPays.svg');
+	background-repeat: no-repeat;
+	width: @logoWidth;
+	height: @logoHeight;
+	padding-left: 6px;
+}
+body.assessmentFeedback .pageHeaderRightTD.pageHeaderRightTD {
+	text-align: right;
+	padding-right: 6px;
+	padding-top: 6px;
+	height: @pageHeaderIconHeight;
+	line-height: @pageHeaderIconHeight;
+}
+body.assessmentFeedback .pageHeaderUser {
+	display: inline-block;
+	line-height: 16px;
+	vertical-align: top;
+	margin-top: 2px;
+	margin-right: 16px;
+}
+body.assessmentFeedback .pageTableBodyTD.pageTableBodyTD {
+	vertical-align: top;
+	padding: 0 10px;
+}

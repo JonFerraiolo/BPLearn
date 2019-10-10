@@ -1,0 +1,138 @@
+@myAccountInputFontSize: 15px;
+
+.myAccount {
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px #888;
+	background: white;
+	padding: 1.5em;
+	width: 30em;
+	height: 18em;
+}
+.myAccountTitle {
+	margin: 0 0 .8em;
+	text-align: center;
+	font-size: 1.1em;
+}
+.myAccountErrors {
+	margin: .2em 0 .5em;
+	color: red;
+	font-weight: bold;
+}
+.myAccountButtonDIV {
+	margin-top: 1.25em;
+	text-align: center;
+}
+.myAccountButtonDIV button {
+	margin: 0 .5em;
+	padding: 2px 4px;
+	font-size: @myAccountInputFontSize;
+	background: lightgray;
+	border: 1px solid darkgray;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 1px 1px 1px #444;
+}
+.myAccountTabBar {
+	margin-bottom: 1em;
+}
+.myAccountTabBarTABLE {
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	width: 100%;
+}
+.myAccountTabBarTD {
+	text-align: center;
+	padding: 4px 0;
+	width: 50%;
+	height: 28px;
+	vertical-align: bottom;
+}
+.myAccountTabBarText {
+	border: 1px solid black;
+	background: lightgray;
+	border-radius: 8px 8px 0 0;
+	display: inline-block;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+}
+.myAccountTabBarTD.myAccountActive .myAccountTabBarText {
+	background: darkgray;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+}
+.myAccountFieldsDIV {
+	display: none;
+}
+.myAccountFieldsTABLE {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.myAccountFieldsTABLE td {
+	padding: .15em 0;
+}
+.myAccountFieldsTABLE td.myAccountLabelColumn, .myAccountFieldsTABLE td.myAccountChangeColumn {
+	width: 1px;
+	white-space: nowrap;
+}
+.myAccountFieldsTABLE td.myAccountLabelColumn {
+	text-align: right;
+	padding-right: 1.5em;
+}
+.myAccountRequired {
+	width: 1.5em;
+	text-align: left;
+	padding-left: .5em;
+	color: red;
+	font-size: 120%;
+}
+.myAccountRequired:after {
+	content: '\2217'
+}
+.myAccountFieldsDIV.myAccountActive {
+	display: block;
+}
+.myAccountINPUT {
+	border: 1px solid black;
+	background-color: lightblue;
+	width: 100%;
+	font-size: @myAccountInputFontSize;
+}
+.myAccountINPUT.myAccountInvalidField {
+	border: 1px solid red;
+	background-color: pink;
+}
+.myAccountChangeBUTTON {
+	margin-left: .5em;
+	font-size: @myAccountInputFontSize;
+}
+.myAccountButtonDIV button.myAccountUpdateBUTTON {
+	background-color: lightblue;
+}
+
+.myAccountUnsavedChanges {
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px #888;
+	background: white;
+	padding: 1.5em;
+}
+.myAccountUnsavedChangesText {
+	margin: .75em;
+}
+.myAccountUnsavedChangesButtonDIV {
+	margin-top: 1.25em;
+	text-align: center;
+}
+.myAccountUnsavedChangesButtonDIV button {
+	margin: 0 .5em;
+	padding: 2px 4px;
+	font-size: @myAccountInputFontSize;
+	background: lightgray;
+	border: 1px solid darkgray;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 1px 1px 1px #444;
+}

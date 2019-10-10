@@ -1,0 +1,217 @@
+.Ecosystem_ModelDiv {
+	height: 100%;
+}
+.Ecosystem_ModelDiv .FormHeaderDIV .ContextHelpIcon {
+  	margin-top: 2px;
+	margin-left: 1em;
+	position: static;
+	vertical-align: top;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/help.svg');
+}
+.Ecosystem_Model_TABLE {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.Ecosystem_Model_TABLE_TD {
+	padding: 0;
+	vertical-align: top;
+}
+.Ecosystem_Model_Title_TR {
+	height: 24px;
+}
+.Ecosystem_Model_Body {
+	height: 100%;
+}
+.Ecosystem_Model_Body_TABLE {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.Ecosystem_Model_Body_TABLE_TD {
+	vertical-align: top;
+	padding: 0;
+}
+.Ecosystem_Model_People_TD {
+	width: 40%;
+}
+.Ecosystem_Model_Rings_Triangle_TD {
+	width: 60%;
+}
+.Ecosystem_Model_TABLE_TD {
+	width: 50%;
+	padding: 0;
+	vertical-align: top;
+}
+.Ecosystem_Model_Rings_Triangle_TD {
+	position: relative;
+}
+.Ecosystem_Model_Rings_DIV, .Ecosystem_Model_Triangle_DIV {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: scroll;
+}
+.Ecosystem_Model_Rings_SVG, .Ecosystem_Model_Triangle_SVG {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.Ecosystem_Model_Triangle_Perimeter, .Ecosystem_Model_Triangle_Line {
+	fill: none;
+	stroke: black;
+	stroke-width: 1;
+	stroke-linejoin: round;
+}
+.Ecosystem_Model_Triangle_Me {
+	text-anchor: middle;
+	font-size: 5;
+	font-weight: bold;
+}
+.Ecosystem_Model_Triangle_Ring_Label {
+	text-anchor: middle;
+	font-size: 4.5;
+}
+.Ecosystem_Model_Rings_Perimeter {
+	stroke: black;
+	stroke-width: 1;
+	fill: none;
+}
+.Ecosystem_Model_Rings_Interior_Ring, .Ecosystem_Model_Rings_Me_Ring {
+	stroke-width: .75;
+	fill: none;
+}
+.Ecosystem_Model_Rings_Ring_Label {
+	font-size: 3;
+	text-anchor: middle;
+}
+.Ecosystem_Model_Rings_Me {
+	font-size: 3.5;
+	font-weight: bold;
+	text-anchor: middle;
+}
+.Ecosystem_Model_People_Rings {
+	padding-left: 3em;
+	font-size: 15px;
+}
+.Ecosystem_Model_People_Ring {
+	padding-bottom: .75em;
+}
+.Ecosystem_Model_People_TD input {
+	font-size: 15px;
+}
+.Ecosystem_Model_People_Ring_Children_DIV {
+	margin-top: 0;
+	margin-left: 1em;
+}
+.Ecosystem_Model_Child_DIV {
+	height: 23px;
+	line-height: 23px;
+	cursor: pointer;
+	padding-left: 1em;
+}
+.Ecosystem_Model_People_Child,
+.Ecosystem_Model_New_Child {
+	display: inline-block;
+	padding: 2px 6px;
+	border: 1px solid black;
+	line-height: normal;
+}
+.Ecosystem_Model_New_Child {
+	border-style: dotted;
+	font-style: italic;
+}
+.Ecosystem_Model_New_Child_SPAN:hover .Ecosystem_Model_New_Child,
+.Ecosystem_Model_New_Child_SPAN:hover .Ecosystem_Model_Circle_New {
+	border-style: solid;
+}
+.Ecosystem_Model_Circle {
+	border-radius: 200px;
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.Ecosystem_Model_Circle_New {
+	border: 1px dotted black;
+}
+.Ecosystem_Model_People_Form_DIV {
+}
+.Ecosystem_Model_Child_DIV_Selected {
+	border: 2px solid #88f;
+	box-shadow: 1px 1px 1px #88f;
+	padding: 1px;
+}
+.Ecosystem_Model_Child_DIV_Selected .Ecosystem_Model_New_Child,
+.Ecosystem_Model_Child_DIV_Selected .Ecosystem_Model_Circle_New {
+	border-style: solid;
+}
+.Ecosystem_Model_Ring_Delete {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+	margin-left: 1.25em;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/deleteRed.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	visibility: hidden;
+	opacity: 0;
+}
+.Ecosystem_Model_Ring_Delete_Visible_1 {
+	opacity: 1;
+	cursor: pointer;
+}
+.Ecosystem_Model_Ring_Delete_Visible_2 {
+	visibility: visible;
+}
+.Ecosystem_Model_Ring_Delete_Visible_2:hover {
+	background-color: #eee;
+	border: 1px solid #ddd;
+}
+.Ecosystem_Model_People_Add_Ring_DIV {
+	margin-top: .5em;
+	margin-left: -1em;
+	height: 0px;
+	border-bottom: 1px solid rgba(0, 64, 0, .3);
+	margin-bottom: .5em;
+}
+.Ecosystem_Model_People_Add_Ring {
+	display: inline-block;
+	margin-left: -1.5em;
+	margin-top: -8px;
+	width: 16px;
+	height: 16px;
+	backgroundColor: white;
+	background-image: data-uri('image/svg+xml;charset=UTF-8', '../art/addGreen.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.Ecosystem_Model_Body_No_Add_Ring .Ecosystem_Model_People_Add_Ring {
+	display: none;
+}
+.Ecosystem_Model_People_Add_Ring:hover {
+	background-color: #eee;
+	border: 1px solid #ddd;
+}
+.Ecosystem_Model_Triangle_Arrow {
+	stroke-width: .5;
+	fill: none;
+	stroke: black;
+}
+.Ecosystem_Model_Triangle_Arrow_White_Out {
+	stroke-width: 2;
+	fill: none;
+	stroke: white;
+}
+.Ecosystem_Model_Triangle_Arrow_Text {
+	font-size: 4;
+	text-anchor: middle;
+}
+.Ecosystem_Model_People_Label_DIV {
+	margin-left: -1em;
+	padding: 0 0 1em;
+	font-weight: bold;
+}
