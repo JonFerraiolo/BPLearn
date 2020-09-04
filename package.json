@@ -27,7 +27,7 @@
     "less-middleware": "^1.0.4",
     "mandrill-api": "^1.0.41",
     "mocha": "^2.1.0",
-    "mongodb": "^2.0",
+    "mongodb": "^3.6",
     "node-promise": "^0.5.11",
     "passport": "^0.2.1",
     "passport-local": "^1.0.0",
